@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47630D8E58EABFA98223136B /* libPods-FLJAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA83E3D0DEBB5EA2C8E9C61 /* libPods-FLJAlertView.a */; };
+		7E38175020085392001376CC /* NSObject+TagString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38174F20085392001376CC /* NSObject+TagString.m */; };
+		7E38175320086262001376CC /* FLJAlertTransionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38175220086262001376CC /* FLJAlertTransionAnimation.m */; };
+		7E381756200862E8001376CC /* FLJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E381755200862E8001376CC /* FLJAlertViewController.m */; };
+		7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38175B2008A578001376CC /* FLJInputAlertView.m */; };
+		7EA044B32004998B004ACC86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B22004998B004ACC86 /* AppDelegate.m */; };
+		7EA044B62004998B004ACC86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B52004998B004ACC86 /* ViewController.m */; };
+		7EA044B92004998B004ACC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA044B72004998B004ACC86 /* Main.storyboard */; };
+		7EA044BB2004998B004ACC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA044BA2004998B004ACC86 /* Assets.xcassets */; };
+		7EA044BE2004998B004ACC86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA044BC2004998B004ACC86 /* LaunchScreen.storyboard */; };
+		7EA044C12004998B004ACC86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044C02004998B004ACC86 /* main.m */; };
+		7EA044C920049A63004ACC86 /* FLJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044C820049A63004ACC86 /* FLJModalViewController.m */; };
+		7EA044CC20049D61004ACC86 /* FLJModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044CB20049D61004ACC86 /* FLJModalTransitionAnimation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E45759FD170CA238EC5FAD1 /* Pods-FLJAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLJAlertView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLJAlertView/Pods-FLJAlertView.release.xcconfig"; sourceTree = "<group>"; };
+		7E38174E20085392001376CC /* NSObject+TagString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TagString.h"; sourceTree = "<group>"; };
+		7E38174F20085392001376CC /* NSObject+TagString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TagString.m"; sourceTree = "<group>"; };
+		7E38175120086262001376CC /* FLJAlertTransionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJAlertTransionAnimation.h; sourceTree = "<group>"; };
+		7E38175220086262001376CC /* FLJAlertTransionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJAlertTransionAnimation.m; sourceTree = "<group>"; };
+		7E381754200862E8001376CC /* FLJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJAlertViewController.h; sourceTree = "<group>"; };
+		7E381755200862E8001376CC /* FLJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJAlertViewController.m; sourceTree = "<group>"; };
+		7E38175A2008A578001376CC /* FLJInputAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJInputAlertView.h; sourceTree = "<group>"; };
+		7E38175B2008A578001376CC /* FLJInputAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJInputAlertView.m; sourceTree = "<group>"; };
+		7EA044AE2004998B004ACC86 /* FLJAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLJAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA044B12004998B004ACC86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EA044B22004998B004ACC86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EA044B42004998B004ACC86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7EA044B52004998B004ACC86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EA044B82004998B004ACC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EA044BA2004998B004ACC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EA044BD2004998B004ACC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EA044BF2004998B004ACC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA044C02004998B004ACC86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA044C720049A63004ACC86 /* FLJModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJModalViewController.h; sourceTree = "<group>"; };
+		7EA044C820049A63004ACC86 /* FLJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJModalViewController.m; sourceTree = "<group>"; };
+		7EA044CA20049D61004ACC86 /* FLJModalTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJModalTransitionAnimation.h; sourceTree = "<group>"; };
+		7EA044CB20049D61004ACC86 /* FLJModalTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJModalTransitionAnimation.m; sourceTree = "<group>"; };
+		B482403819EB7A68B013156E /* Pods-FLJAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLJAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLJAlertView/Pods-FLJAlertView.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA83E3D0DEBB5EA2C8E9C61 /* libPods-FLJAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLJAlertView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA044AB2004998B004ACC86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47630D8E58EABFA98223136B /* libPods-FLJAlertView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1510CBDE1086243831B57D1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA83E3D0DEBB5EA2C8E9C61 /* libPods-FLJAlertView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		483859019AB91020FBF43C85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B482403819EB7A68B013156E /* Pods-FLJAlertView.debug.xcconfig */,
+				3E45759FD170CA238EC5FAD1 /* Pods-FLJAlertView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E38175D2008C593001376CC /* FLJAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E38175120086262001376CC /* FLJAlertTransionAnimation.h */,
+				7E38175220086262001376CC /* FLJAlertTransionAnimation.m */,
+				7E381754200862E8001376CC /* FLJAlertViewController.h */,
+				7E381755200862E8001376CC /* FLJAlertViewController.m */,
+			);
+			path = FLJAlertViewController;
+			sourceTree = "<group>";
+		};
+		7E38175E2008C5DA001376CC /* FLJModelInputViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E38175A2008A578001376CC /* FLJInputAlertView.h */,
+				7E38175B2008A578001376CC /* FLJInputAlertView.m */,
+				7EA044CA20049D61004ACC86 /* FLJModalTransitionAnimation.h */,
+				7EA044CB20049D61004ACC86 /* FLJModalTransitionAnimation.m */,
+				7EA044C720049A63004ACC86 /* FLJModalViewController.h */,
+				7EA044C820049A63004ACC86 /* FLJModalViewController.m */,
+			);
+			path = FLJModelInputViewController;
+			sourceTree = "<group>";
+		};
+		7E38175F2008C663001376CC /* category */ = {
+			isa = PBXGroup;
+			children = (
+				7E38174E20085392001376CC /* NSObject+TagString.h */,
+				7E38174F20085392001376CC /* NSObject+TagString.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		7EA044A52004998B004ACC86 = {
+			isa = PBXGroup;
+			children = (
+				7EA044B02004998B004ACC86 /* FLJAlertView */,
+				7EA044AF2004998B004ACC86 /* Products */,
+				483859019AB91020FBF43C85 /* Pods */,
+				1510CBDE1086243831B57D1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA044AF2004998B004ACC86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA044AE2004998B004ACC86 /* FLJAlertView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA044B02004998B004ACC86 /* FLJAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				7E38175F2008C663001376CC /* category */,
+				7E38175E2008C5DA001376CC /* FLJModelInputViewController */,
+				7E38175D2008C593001376CC /* FLJAlertViewController */,
+				7EA044B12004998B004ACC86 /* AppDelegate.h */,
+				7EA044B22004998B004ACC86 /* AppDelegate.m */,
+				7EA044B42004998B004ACC86 /* ViewController.h */,
+				7EA044B52004998B004ACC86 /* ViewController.m */,
+				7EA044B72004998B004ACC86 /* Main.storyboard */,
+				7EA044BA2004998B004ACC86 /* Assets.xcassets */,
+				7EA044BC2004998B004ACC86 /* LaunchScreen.storyboard */,
+				7EA044BF2004998B004ACC86 /* Info.plist */,
+				7EA044C02004998B004ACC86 /* main.m */,
+			);
+			path = FLJAlertView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA044AD2004998B004ACC86 /* FLJAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA044C42004998B004ACC86 /* Build configuration list for PBXNativeTarget "FLJAlertView" */;
+			buildPhases = (
+				69D445D3C6C2533B2859C60C /* [CP] Check Pods Manifest.lock */,
+				7EA044AA2004998B004ACC86 /* Sources */,
+				7EA044AB2004998B004ACC86 /* Frameworks */,
+				7EA044AC2004998B004ACC86 /* Resources */,
+				691AE850698D7BB6587BE4A4 /* [CP] Embed Pods Frameworks */,
+				0AD748A414AA6DCC49E3695F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLJAlertView;
+			productName = FLJAlertView;
+			productReference = 7EA044AE2004998B004ACC86 /* FLJAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA044A62004998B004ACC86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "贾林飞";
+				TargetAttributes = {
+					7EA044AD2004998B004ACC86 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7EA044A92004998B004ACC86 /* Build configuration list for PBXProject "FLJAlertView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EA044A52004998B004ACC86;
+			productRefGroup = 7EA044AF2004998B004ACC86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA044AD2004998B004ACC86 /* FLJAlertView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA044AC2004998B004ACC86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA044BE2004998B004ACC86 /* LaunchScreen.storyboard in Resources */,
+				7EA044BB2004998B004ACC86 /* Assets.xcassets in Resources */,
+				7EA044B92004998B004ACC86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD748A414AA6DCC49E3695F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLJAlertView/Pods-FLJAlertView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		691AE850698D7BB6587BE4A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLJAlertView/Pods-FLJAlertView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D445D3C6C2533B2859C60C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLJAlertView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA044AA2004998B004ACC86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */,
+				7E38175020085392001376CC /* NSObject+TagString.m in Sources */,
+				7E38175320086262001376CC /* FLJAlertTransionAnimation.m in Sources */,
+				7EA044B62004998B004ACC86 /* ViewController.m in Sources */,
+				7EA044CC20049D61004ACC86 /* FLJModalTransitionAnimation.m in Sources */,
+				7EA044C920049A63004ACC86 /* FLJModalViewController.m in Sources */,
+				7EA044C12004998B004ACC86 /* main.m in Sources */,
+				7E381756200862E8001376CC /* FLJAlertViewController.m in Sources */,
+				7EA044B32004998B004ACC86 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA044B72004998B004ACC86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA044B82004998B004ACC86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EA044BC2004998B004ACC86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA044BD2004998B004ACC86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA044C22004998B004ACC86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EA044C32004998B004ACC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EA044C52004998B004ACC86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B482403819EB7A68B013156E /* Pods-FLJAlertView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLJAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jialinfei.FLJAlertView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EA044C62004998B004ACC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E45759FD170CA238EC5FAD1 /* Pods-FLJAlertView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLJAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jialinfei.FLJAlertView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA044A92004998B004ACC86 /* Build configuration list for PBXProject "FLJAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA044C22004998B004ACC86 /* Debug */,
+				7EA044C32004998B004ACC86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA044C42004998B004ACC86 /* Build configuration list for PBXNativeTarget "FLJAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA044C52004998B004ACC86 /* Debug */,
+				7EA044C62004998B004ACC86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA044A62004998B004ACC86 /* Project object */;
+}
