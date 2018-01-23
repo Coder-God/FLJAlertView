@@ -12,6 +12,8 @@
 		7E38175320086262001376CC /* FLJAlertTransionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38175220086262001376CC /* FLJAlertTransionAnimation.m */; };
 		7E381756200862E8001376CC /* FLJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E381755200862E8001376CC /* FLJAlertViewController.m */; };
 		7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38175B2008A578001376CC /* FLJInputAlertView.m */; };
+		7E71E99C2016D4EA0000F0BD /* FLJPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E99B2016D4EA0000F0BD /* FLJPickerViewController.m */; };
+		7E71E99F201711060000F0BD /* RelatedPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E99E201711060000F0BD /* RelatedPickerViewController.m */; };
 		7EA044B32004998B004ACC86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B22004998B004ACC86 /* AppDelegate.m */; };
 		7EA044B62004998B004ACC86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B52004998B004ACC86 /* ViewController.m */; };
 		7EA044B92004998B004ACC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA044B72004998B004ACC86 /* Main.storyboard */; };
@@ -32,6 +34,10 @@
 		7E381755200862E8001376CC /* FLJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJAlertViewController.m; sourceTree = "<group>"; };
 		7E38175A2008A578001376CC /* FLJInputAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJInputAlertView.h; sourceTree = "<group>"; };
 		7E38175B2008A578001376CC /* FLJInputAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJInputAlertView.m; sourceTree = "<group>"; };
+		7E71E99A2016D4EA0000F0BD /* FLJPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJPickerViewController.h; sourceTree = "<group>"; };
+		7E71E99B2016D4EA0000F0BD /* FLJPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJPickerViewController.m; sourceTree = "<group>"; };
+		7E71E99D201711060000F0BD /* RelatedPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelatedPickerViewController.h; sourceTree = "<group>"; };
+		7E71E99E201711060000F0BD /* RelatedPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelatedPickerViewController.m; sourceTree = "<group>"; };
 		7EA044AE2004998B004ACC86 /* FLJAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLJAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA044B12004998B004ACC86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EA044B22004998B004ACC86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +118,17 @@
 			path = category;
 			sourceTree = "<group>";
 		};
+		7E71E9992016D4B40000F0BD /* FLJPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E71E99A2016D4EA0000F0BD /* FLJPickerViewController.h */,
+				7E71E99B2016D4EA0000F0BD /* FLJPickerViewController.m */,
+				7E71E99D201711060000F0BD /* RelatedPickerViewController.h */,
+				7E71E99E201711060000F0BD /* RelatedPickerViewController.m */,
+			);
+			path = FLJPickerViewController;
+			sourceTree = "<group>";
+		};
 		7EA044A52004998B004ACC86 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +153,7 @@
 				7E38175F2008C663001376CC /* category */,
 				7E38175E2008C5DA001376CC /* FLJModelInputViewController */,
 				7E38175D2008C593001376CC /* FLJAlertViewController */,
+				7E71E9992016D4B40000F0BD /* FLJPickerViewController */,
 				7EA044B12004998B004ACC86 /* AppDelegate.h */,
 				7EA044B22004998B004ACC86 /* AppDelegate.m */,
 				7EA044B42004998B004ACC86 /* ViewController.h */,
@@ -277,10 +295,12 @@
 				7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */,
 				7E38175020085392001376CC /* NSObject+TagString.m in Sources */,
 				7E38175320086262001376CC /* FLJAlertTransionAnimation.m in Sources */,
+				7E71E99F201711060000F0BD /* RelatedPickerViewController.m in Sources */,
 				7EA044B62004998B004ACC86 /* ViewController.m in Sources */,
 				7EA044CC20049D61004ACC86 /* FLJModalTransitionAnimation.m in Sources */,
 				7EA044C920049A63004ACC86 /* FLJModalViewController.m in Sources */,
 				7EA044C12004998B004ACC86 /* main.m in Sources */,
+				7E71E99C2016D4EA0000F0BD /* FLJPickerViewController.m in Sources */,
 				7E381756200862E8001376CC /* FLJAlertViewController.m in Sources */,
 				7EA044B32004998B004ACC86 /* AppDelegate.m in Sources */,
 			);

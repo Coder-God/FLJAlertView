@@ -9,8 +9,12 @@
 #import "ViewController.h"
 #import "FLJModalViewController.h"
 #import "FLJAlertViewController.h"
+#import "FLJPickerViewController.h"
+#import "RelatedPickerViewController.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong)NSMutableArray* dataSource;
 
 @property(nonatomic,strong)UIButton* btn;
 
@@ -20,49 +24,110 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
-        
-    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [btn setTitle:@"弹框" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnDidClicked) forControlEvents:UIControlEventTouchUpInside];
-    self.btn = btn;
-    [self.view addSubview:btn];
+
+    self.dataSource = [NSMutableArray arrayWithObjects:@"FLJModalViewController",@"FLJAlertViewController",@"FLJPickerViewController",@"RelatedPickerViewController", nil];
 }
 
--(void)btnDidClicked
+#pragma mark UITableViewDataSource,UITableViewDelegate
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    FLJModalViewController* VC = [FLJModalViewController creatAlertVC] ;
-//    FLJAlertViewController* VC = [FLJAlertViewController alertViewControllerWithTitle:@"带我去方法" description:@"fwefwef"];
-    [self presentViewController:VC animated:YES completion:^{
-    }];
+    return 1;
 }
 
--(void)dissmissBtnDidClicked
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    return self.dataSource.count;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertController* alertVc = [UIAlertController alertControllerWithTitle:@"fwefwef" message:@"fwefwef"    preferredStyle:UIAlertControllerStyleAlert];
+    return 88;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0;
+}
+
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* reusedID = @"reusedID";
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:reusedID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reusedID];
+    }
     
-    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    UIAlertAction* sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    [alertVc addAction:cancelAction];
-    [alertVc addAction:sureAction];
+    cell.textLabel.text = [self.dataSource objectAtIndex:indexPath.row];
+    cell.textLabel.textColor = [UIColor blackColor];
     
-    [self presentViewController:alertVc animated:YES completion:^{
-        
-    }];
-
+    return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    switch (indexPath.row) {
+        case 0:
+        {
+            FLJModalViewController* VC = [FLJModalViewController creatAlertVC] ;
+            [self presentViewController:VC animated:YES completion:^{
+            }];
+        }
+            break;
+        case 1:
+        {
+            FLJAlertViewController* VC = [FLJAlertViewController alertViewControllerWithTitle:@"带我去方法" description:@"fwefwef"];
+            [self presentViewController:VC animated:YES completion:^{
+            }];
+        }
+            break;
+        case 2:
+        {
+            NSMutableArray* numArray = [[NSMutableArray alloc] init];
+            for (int i = 0; i<10; i++) {
+                NSString* string = [NSString stringWithFormat:@"%d",i];
+                [numArray addObject:string];
+            }
+
+            FLJPickerViewController* VC = [[FLJPickerViewController alloc] initWithListArray:numArray];
+            VC.selectBlock = ^(NSString *selectString) {
+                NSLog(@"select==%@",selectString);
+            };
+            [self presentViewController:VC animated:NO completion:^{
+            }];
+        }
+            break;
+        case 3:
+        {
+            NSMutableArray* numArray = [[NSMutableArray alloc] init];
+            for (int i = 0; i<10; i++) {
+                NSString* string = [NSString stringWithFormat:@"%d",i];
+                [numArray addObject:string];
+            }
+            NSArray* nameArray = @[@"张三",@"李四",@"王五"];
+            NSArray* genderArray = @[@"男",@"女",@"未知"];
+
+            NSArray* relatedArray = @[@{@"数字":numArray},@{@"名字":nameArray},@{@"性别":genderArray}];
+
+            RelatedPickerViewController* VC = [[RelatedPickerViewController alloc] initWithListArray:relatedArray];
+            VC.selectBlock = ^(NSString *selectString1, NSString *selectString2) {
+                NSLog(@"select==%@==%@",selectString1,selectString2);
+            };
+            [self presentViewController:VC animated:NO completion:^{
+            }];
+
+        }
+            break;
+        default:
+            break;
+    }
+}
 
 @end
