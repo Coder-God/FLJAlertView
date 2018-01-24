@@ -14,6 +14,8 @@
 		7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38175B2008A578001376CC /* FLJInputAlertView.m */; };
 		7E71E99C2016D4EA0000F0BD /* FLJPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E99B2016D4EA0000F0BD /* FLJPickerViewController.m */; };
 		7E71E99F201711060000F0BD /* RelatedPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E99E201711060000F0BD /* RelatedPickerViewController.m */; };
+		7E71E9A4201728EE0000F0BD /* FLJQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E9A3201728EE0000F0BD /* FLJQRCodeViewController.m */; };
+		7E71E9A7201729120000F0BD /* FLJPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E71E9A6201729120000F0BD /* FLJPhotoAlbumViewController.m */; };
 		7EA044B32004998B004ACC86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B22004998B004ACC86 /* AppDelegate.m */; };
 		7EA044B62004998B004ACC86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044B52004998B004ACC86 /* ViewController.m */; };
 		7EA044B92004998B004ACC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA044B72004998B004ACC86 /* Main.storyboard */; };
@@ -22,6 +24,11 @@
 		7EA044C12004998B004ACC86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044C02004998B004ACC86 /* main.m */; };
 		7EA044C920049A63004ACC86 /* FLJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044C820049A63004ACC86 /* FLJModalViewController.m */; };
 		7EA044CC20049D61004ACC86 /* FLJModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA044CB20049D61004ACC86 /* FLJModalTransitionAnimation.m */; };
+		7EC972D820181E2E0094A260 /* UIViewController+MessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC972D720181E2E0094A260 /* UIViewController+MessageAlert.m */; };
+		7EC972DB2018391B0094A260 /* FLJScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC972DA2018391B0094A260 /* FLJScanQRViewController.m */; };
+		7EC972DE201839680094A260 /* FLJRecognizeQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC972DD201839680094A260 /* FLJRecognizeQRViewController.m */; };
+		7EC972E12018398C0094A260 /* FLJCreatQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC972E02018398C0094A260 /* FLJCreatQRViewController.m */; };
+		7EC972E420183CBA0094A260 /* FLJQRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC972E320183CBA0094A260 /* FLJQRScanView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,10 @@
 		7E71E99B2016D4EA0000F0BD /* FLJPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJPickerViewController.m; sourceTree = "<group>"; };
 		7E71E99D201711060000F0BD /* RelatedPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelatedPickerViewController.h; sourceTree = "<group>"; };
 		7E71E99E201711060000F0BD /* RelatedPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelatedPickerViewController.m; sourceTree = "<group>"; };
+		7E71E9A2201728EE0000F0BD /* FLJQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJQRCodeViewController.h; sourceTree = "<group>"; };
+		7E71E9A3201728EE0000F0BD /* FLJQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJQRCodeViewController.m; sourceTree = "<group>"; };
+		7E71E9A5201729120000F0BD /* FLJPhotoAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJPhotoAlbumViewController.h; sourceTree = "<group>"; };
+		7E71E9A6201729120000F0BD /* FLJPhotoAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJPhotoAlbumViewController.m; sourceTree = "<group>"; };
 		7EA044AE2004998B004ACC86 /* FLJAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLJAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA044B12004998B004ACC86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EA044B22004998B004ACC86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +63,16 @@
 		7EA044C820049A63004ACC86 /* FLJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJModalViewController.m; sourceTree = "<group>"; };
 		7EA044CA20049D61004ACC86 /* FLJModalTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJModalTransitionAnimation.h; sourceTree = "<group>"; };
 		7EA044CB20049D61004ACC86 /* FLJModalTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJModalTransitionAnimation.m; sourceTree = "<group>"; };
+		7EC972D620181E2E0094A260 /* UIViewController+MessageAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MessageAlert.h"; sourceTree = "<group>"; };
+		7EC972D720181E2E0094A260 /* UIViewController+MessageAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MessageAlert.m"; sourceTree = "<group>"; };
+		7EC972D92018391B0094A260 /* FLJScanQRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJScanQRViewController.h; sourceTree = "<group>"; };
+		7EC972DA2018391B0094A260 /* FLJScanQRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJScanQRViewController.m; sourceTree = "<group>"; };
+		7EC972DC201839680094A260 /* FLJRecognizeQRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJRecognizeQRViewController.h; sourceTree = "<group>"; };
+		7EC972DD201839680094A260 /* FLJRecognizeQRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJRecognizeQRViewController.m; sourceTree = "<group>"; };
+		7EC972DF2018398C0094A260 /* FLJCreatQRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJCreatQRViewController.h; sourceTree = "<group>"; };
+		7EC972E02018398C0094A260 /* FLJCreatQRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJCreatQRViewController.m; sourceTree = "<group>"; };
+		7EC972E220183CBA0094A260 /* FLJQRScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLJQRScanView.h; sourceTree = "<group>"; };
+		7EC972E320183CBA0094A260 /* FLJQRScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLJQRScanView.m; sourceTree = "<group>"; };
 		B482403819EB7A68B013156E /* Pods-FLJAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLJAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLJAlertView/Pods-FLJAlertView.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA83E3D0DEBB5EA2C8E9C61 /* libPods-FLJAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLJAlertView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +135,8 @@
 			children = (
 				7E38174E20085392001376CC /* NSObject+TagString.h */,
 				7E38174F20085392001376CC /* NSObject+TagString.m */,
+				7EC972D620181E2E0094A260 /* UIViewController+MessageAlert.h */,
+				7EC972D720181E2E0094A260 /* UIViewController+MessageAlert.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -127,6 +150,32 @@
 				7E71E99E201711060000F0BD /* RelatedPickerViewController.m */,
 			);
 			path = FLJPickerViewController;
+			sourceTree = "<group>";
+		};
+		7E71E9A02017288E0000F0BD /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				7E71E9A2201728EE0000F0BD /* FLJQRCodeViewController.h */,
+				7E71E9A3201728EE0000F0BD /* FLJQRCodeViewController.m */,
+				7EC972E220183CBA0094A260 /* FLJQRScanView.h */,
+				7EC972E320183CBA0094A260 /* FLJQRScanView.m */,
+				7EC972D92018391B0094A260 /* FLJScanQRViewController.h */,
+				7EC972DA2018391B0094A260 /* FLJScanQRViewController.m */,
+				7EC972DC201839680094A260 /* FLJRecognizeQRViewController.h */,
+				7EC972DD201839680094A260 /* FLJRecognizeQRViewController.m */,
+				7EC972DF2018398C0094A260 /* FLJCreatQRViewController.h */,
+				7EC972E02018398C0094A260 /* FLJCreatQRViewController.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		7E71E9A1201728A80000F0BD /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				7E71E9A5201729120000F0BD /* FLJPhotoAlbumViewController.h */,
+				7E71E9A6201729120000F0BD /* FLJPhotoAlbumViewController.m */,
+			);
+			path = PhotoAlbum;
 			sourceTree = "<group>";
 		};
 		7EA044A52004998B004ACC86 = {
@@ -154,6 +203,8 @@
 				7E38175E2008C5DA001376CC /* FLJModelInputViewController */,
 				7E38175D2008C593001376CC /* FLJAlertViewController */,
 				7E71E9992016D4B40000F0BD /* FLJPickerViewController */,
+				7E71E9A02017288E0000F0BD /* QRCode */,
+				7E71E9A1201728A80000F0BD /* PhotoAlbum */,
 				7EA044B12004998B004ACC86 /* AppDelegate.h */,
 				7EA044B22004998B004ACC86 /* AppDelegate.m */,
 				7EA044B42004998B004ACC86 /* ViewController.h */,
@@ -293,10 +344,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E38175C2008A578001376CC /* FLJInputAlertView.m in Sources */,
+				7E71E9A4201728EE0000F0BD /* FLJQRCodeViewController.m in Sources */,
 				7E38175020085392001376CC /* NSObject+TagString.m in Sources */,
+				7EC972E420183CBA0094A260 /* FLJQRScanView.m in Sources */,
 				7E38175320086262001376CC /* FLJAlertTransionAnimation.m in Sources */,
+				7EC972E12018398C0094A260 /* FLJCreatQRViewController.m in Sources */,
+				7E71E9A7201729120000F0BD /* FLJPhotoAlbumViewController.m in Sources */,
 				7E71E99F201711060000F0BD /* RelatedPickerViewController.m in Sources */,
 				7EA044B62004998B004ACC86 /* ViewController.m in Sources */,
+				7EC972DB2018391B0094A260 /* FLJScanQRViewController.m in Sources */,
+				7EC972DE201839680094A260 /* FLJRecognizeQRViewController.m in Sources */,
+				7EC972D820181E2E0094A260 /* UIViewController+MessageAlert.m in Sources */,
 				7EA044CC20049D61004ACC86 /* FLJModalTransitionAnimation.m in Sources */,
 				7EA044C920049A63004ACC86 /* FLJModalViewController.m in Sources */,
 				7EA044C12004998B004ACC86 /* main.m in Sources */,
@@ -438,7 +496,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBWFH846D9;
 				INFOPLIST_FILE = FLJAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jialinfei.FLJAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,7 +512,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NBWFH846D9;
 				INFOPLIST_FILE = FLJAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jialinfei.FLJAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

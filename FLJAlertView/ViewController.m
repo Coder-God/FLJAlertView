@@ -11,6 +11,8 @@
 #import "FLJAlertViewController.h"
 #import "FLJPickerViewController.h"
 #import "RelatedPickerViewController.h"
+#import "FLJQRCodeViewController.h"
+#import "FLJPhotoAlbumViewController.h"
 
 @interface ViewController ()
 
@@ -24,8 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.dataSource = [NSMutableArray arrayWithObjects:@"FLJModalViewController",@"FLJAlertViewController",@"FLJPickerViewController",@"RelatedPickerViewController", nil];
+    self.view.clipsToBounds = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.dataSource = [NSMutableArray arrayWithObjects:@"modalViewController",@"alertViewController",@"一级pickerview",@"二级联动的pickerview",@"二维码",@"相册", nil];
 }
 
 #pragma mark UITableViewDataSource,UITableViewDelegate
@@ -125,6 +128,19 @@
 
         }
             break;
+        case 4:
+        {
+            FLJQRCodeViewController* qrVC = [[FLJQRCodeViewController alloc] init];
+            [self.navigationController pushViewController:qrVC animated:YES];
+        }
+            break;
+        case 5:
+        {
+            FLJPhotoAlbumViewController* photoAlbumVC = [[FLJPhotoAlbumViewController alloc] init];
+            [self.navigationController pushViewController:photoAlbumVC animated:YES];
+        }
+            break;
+
         default:
             break;
     }
